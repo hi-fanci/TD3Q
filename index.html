@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- #region: config css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- #endregion: config css-->
+    <!-- #region: style css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- #endregion: style css-->
+    <title>TD3Q - demo</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen">
+
+            <!-- ↓↓ data_hover ↓↓ -->
+            <span class="data_hover"></span>
+            <!-- ↑↑ data_hover ↑↑ -->
+
+            <!-- ↓↓ popup notice ↓↓ -->
+            <div class="notice">
+                <p>
+                    vàng nạp ở đây
+                    <span class="gold_card">10000</span>
+                </p>
+
+            </div>
+            <!-- ↑↑ popup notice ↑↑ -->
+            <!-- ↓↓ users ↓↓ -->
+            <div class="user">
+                <div class="level js_hover" data-hover="1212222/4040404">
+                    <span>Lv 127</span>
+                </div>
+                <button class="vip open_popup" data-id="#popup_vip_daily">
+                    <span>VIP 0</span>
+                </button>
+            </div>
+            <!-- ↑↑ users ↑↑ -->
+
+
+            <!-- // nvhn -->
+            <button class="btn nhiem_vu_hang_ngay js_hover" data-hover="nhiem vu hang ngay">nvhn</button>
+
+            <!-- // diem danh -->
+            <button class="btn diem_danh">Diem danh</button>
+
+            <!-- // chat -->
+            <div class="chat_box">
+                <ul class="chat_box_area">
+                </ul>
+                <label for="chat_box_input">
+                    <input type="text" id="chat_box_input">
+                </label>
+                <button class="chat_box_send">Send</button>
+            </div>
+
+            <!-- // map name -->
+            <div class="map_name">Lorem ipsum - 10</div>
+
+            <!-- // source -->
+            <ul class="source">
+                <li class="source_gold js_hover" data-hover="100121">
+                    <img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/gold-coins-6149162-5046057.png"
+                        alt="">
+                    <span>100k</span>
+                </li>
+                <li class="source_silver js_hover" data-hover="22121">
+                    <img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/silver-coins-6149163-5046058.png"
+                        alt="">
+                    <span>22k</span>
+                </li>
+                <li class="source_wood js_hover" data-hover="101">
+                    <img src="https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png" alt="">
+                    <span>101</span>
+                </li>
+                <li class="source_rock js_hover" data-hover="1213">
+                    <img src="https://cdn2.iconfinder.com/data/icons/outlined-valuable-items/200/minerals_pure_silver-512.png"
+                        alt="">
+                    <span>1k</span>
+                </li>
+            </ul>
+
+            <!-- // feature -->
+            <div class="feature">
+                <!-- // main building -->
+                <button class="btn feature_main_building open_popup" data-id="#popup_main_building">
+                    Nhà chính
+                </button>
+                <!-- // main building -->
+                <button class="btn feature_heroes">
+                    Tướng
+                </button>
+                <!-- // main building -->
+                <button class="btn feature_heroes_upgrade">
+                    Luyện<br />tướng
+                </button>
+                <!-- // feature weapons -->
+                <button class="btn feature_weapons">
+                    Trang<br />bị
+                </button>
+                <!-- // feature weapons upgrade -->
+                <button class="btn feature_weapons_upgrade">
+                    Cường hóa
+                </button>
+                <!-- // feature inventory -->
+                <button class="btn feature_inventory">
+                    Túi
+                </button>
+                <!-- // feature guild -->
+                <button class="btn feature_guild">
+                    Bang
+                </button>
+                <!-- // map attack -->
+                <button class="btn feature_map_attacker">
+                    Chiến<br />đấu
+                </button>
+                <!-- // theft attack -->
+                <button class="btn feature_map_theft">
+                    Cướp
+                </button>
+            </div>
+        </div>
+
+        <div class="popup popup_common popup_main_building" id="popup_main_building">
+            <div class="popup_mask"></div>
+
+            <div class="popup_content">
+                <h4 class="popup_heading">Nhà chính</h4>
+
+                <div class="tab tab_common">
+
+                    <div class="tab_buttons">
+                        <button class="actived">Cường hóa</button>
+                        <button>Tăng sao</button>
+                        <button>Nâng cấp</button>
+                    </div>
+
+                    <div class="tab_content">
+                        <!-- // cuong hoa -->
+                        <div class="tab_item actived tab_1 stat_tab">
+                            <div class="upgrade">
+                                <div class="ori ori_a">10</div>
+                                <div class="next ori_b">11</div>
+                            </div>
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>Công:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>Tốc:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>P.vi:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <ul class="source_needed">
+                                <li class="js_add_item" data-item='silver' data-amount='123111'></li>
+                                <li class="js_add_item" data-item='wood' data-amount='12312323'></li>
+                            </ul>
+                            <button class="btn btn_upgrade">
+                                Cường hóa
+                            </button>
+                        </div>
+
+                        <!-- // tang sao -->
+                        <div class="tab_item tab_2 stat_tab">
+                            <div class="stars" data-ori="4">
+                                <div class="ori"></div>
+                                <div class="next"></div>
+                            </div>
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>Công:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>Tốc:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>P.vi:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <ul class="items source_needed">
+                                <li class="js_add_item" data-item='main_star_card' data-amount='123111'></li>
+                                <li class="js_add_item" data-item='wood' data-amount='12312323'></li>
+                            </ul>
+                            <button class="btn btn_upgrade">
+                                Tăng sao
+                            </button>
+                        </div>
+                        <!-- // Nang cap -->
+                        <div class="tab_item tab_3 stat_tab">
+                            <div class="upgrade">
+                                <div class="ori ori_a">A</div>
+                                <div class="next ori_b">B</div>
+                            </div>
+                            <dl class="stat stat_common js_stat" data-ori="1200" data-add="82">
+                                <dt>Công:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <dl class="stat stat_common js_stat" data-ori="12" data-add="8">
+                                <dt>Tốc:</dt>
+                                <dd>
+                                </dd>
+                            </dl>
+
+                            <dl class="stat stat_common js_stat" data-ori="100" data-add="2">
+                                <dt>P.vi:</dt>
+                                <dd></dd>
+                            </dl>
+
+                            <ul class="items source_needed">
+                                <li class="js_add_item" data-item='main_star_card' data-amount='1231'></li>
+                                <li class="js_add_item" data-item='silver' data-amount='1231232'></li>
+                            </ul>
+                            <button class="btn btn_upgrade">
+                                Nâng cấp
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="popup popup_common popup_vip vip_daily" id="popup_vip_daily">
+            <div class="popup_mask"></div>
+
+            <div class="popup_content">
+                <h4 class="popup_heading">VIP 0</h4>
+                <span class="vip_daily_info">nạp thêm 10 sẽ đạt VIP 1</span>
+
+                <button class="more_vip_right open_popup" data-id="#popup_vip_right">Xem đặc quyền VIP</button>
+
+                <div class="container">
+                    <div class="block block_vip_gift">
+                        <p class="title">Quà VIP hằng ngày:</p>
+                        <p class="text_desc vip_gift">thẻ 1k bạc , thẻ 1k gỗ , thẻ 1k đá</p>
+                        <button class="vip_gift_recive">Nhận</button>
+                    </div>
+                    <button class="vip_up_submit">Tăng cấp VIP</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ↓↓ vip right ↓↓ -->
+        <div class="popup popup_common popup_cover popup_vip" id="popup_vip_right">
+            <div class="popup_mask"></div>
+
+            <div class="popup_content">
+                <h4 class="popup_heading">Đặc quyền VIP</h4>
+                <div class="container">
+                    <div class="vip_right_tab">
+                        <button class="button actived">VIP 0</button>
+                        <button class="button">VIP 0</button>
+                        <button class="button">VIP 0</button>
+                        <button class="button">VIP 0</button>
+                        <button class="button">VIP 0</button>
+                    </div>
+                    <div class="vip_right_info">
+                        <div class="block"></div>
+                        <div class="block">
+                            <div class="gift">
+                                <p>Quà hằng ngày:</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam!</p>
+                            </div>
+                            <hr class="hr_custom" />
+                            <div class="advantage">
+                                <ul class="ul_num ul_flex">
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ↑↑ vip right ↑↑ -->
+
+
+    </div>
+
+    <!-- #region: jQuery-->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <!-- #endregion: jQuery-->
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/chatbox.js"></script>
+    <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/tab.js"></script>
+    <script src="./assets/js/vip.js"></script>
+</body>
+
+</html>

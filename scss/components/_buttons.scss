@@ -1,0 +1,24 @@
+/* button */
+.btn {
+    width: 58px;
+    height: 58px;
+
+    display: block;
+
+    border-radius: 4px;
+    background-color: #3fc1e8;
+
+    color: #fff;
+
+    /* btn_upgrade */
+    &_upgrade {
+        width: 200px;
+        height: 40px;
+
+        font-size: 20px;
+
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

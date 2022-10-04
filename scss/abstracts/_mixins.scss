@@ -1,0 +1,43 @@
+@use "sass:math";
+
+// > @media
+@mixin screen($bp) {
+    @media only screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin screen_min($bp) {
+    @media only screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin screen_minmax($bp1, $bp2){
+    @media only screen and (min-width: $bp1) and (max-width: $bp2){
+        @content;
+    }
+}
+
+@mixin pchover {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
+// > fonts
+@mixin fonts($family:'', $font_size, $font_weight, $lineheight, $lett : 0) {
+    @if ($family !='') {
+        font-family: $family;
+    }
+
+    font-size: #{$font_size * 0.1rem};
+    font-weight: $font_weight;
+
+    // line-height: math.div($lineheight, $font_size);
+    line-height: #{$lineheight / $font_size};
+
+    @if($lett !=0) {
+        letter-spacing: #{$lett * 0.001em};
+    }
+}

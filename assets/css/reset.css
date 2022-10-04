@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #09b5e5;
+    background-color: #333;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #09b5e5;
+    background-color: #333;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    display: none;
+}
+
+a {
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input,
+button {
+    vertical-align: middle;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+select {
+    background-color: inherit;
+    line-height: normal;
+}
+
+label {
+    cursor: pointer;
+}

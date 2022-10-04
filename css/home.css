@@ -1,0 +1,92 @@
+.app {
+  width: 1200px;
+  height: 640px;
+  margin: 100px 20px;
+  font-size: 16px;
+  line-height: 1.15;
+  padding: 12px;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* source */
+.source {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+.source li {
+  width: 110px;
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  text-align: right;
+  color: #fff;
+  border-radius: 99px;
+  border: 2px solid transparent;
+  background-color: #666663;
+}
+.source img {
+  width: 20px;
+}
+.source span {
+  display: block;
+  width: 80px;
+}
+
+/* items */
+.items i {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 99px;
+  background-color: #b8216f;
+}
+
+/* source_needed */
+.source_needed {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.source_needed li {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.source_needed li + li {
+  margin-left: 28px;
+}
+.source_needed li img {
+  width: 30px;
+}
+
+/* map_name */
+.map_name {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=home.css.map */

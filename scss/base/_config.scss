@@ -1,0 +1,77 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+// > align 
+.align {
+    &_center {
+        text-align: center;
+    }
+
+    &_left {
+        text-align: left;
+    }
+
+    &_right {
+        text-align: right;
+    }
+}
+
+// > input
+input[type="text"] {
+    outline: 0;
+    border: 0;
+    background-color: #ccc;
+
+    font-size: 12px;
+
+    padding: 4px 10px;
+
+    border-radius: 4px;
+}
+
+.ul {
+    &_num {
+        counter-reset: ul_num;
+
+        li {
+            &::before {
+                counter-increment: ul_num;
+                content: counter(ul_num) '. ';
+            }
+        }
+    }
+
+    &_flex {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 50%;
+            margin-top: 5px;
+        }
+    }
+}
+
+// hr
+.hr {
+    &_custom {
+        width: 60%;
+        height: 1px;
+
+        background-color: #333;
+        border: 0;
+        outline: 0;
+
+        display: block;
+
+        margin: 16px auto;
+    }
+}
+
+// title
+.title {
+    font-size: 22px;
+    font-weight: 700;
+}

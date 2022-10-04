@@ -1,0 +1,64 @@
+/* popup */
+.popup {
+    position: absolute;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: visibility 400ms ease, opacity 300ms linear 100ms;
+
+    &.popup_cover {
+        z-index: 1040;
+    }
+
+    &.actived {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &_mask {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &_content {
+        width: 640px;
+
+        padding: 20px;
+        background-color: #bfbfbf;
+
+        border-radius: 8px;
+        border: 4px solid g.$c_dark;
+    }
+
+    // popup_heading
+    &_heading {
+        color: #fff;
+        font-size: 26px;
+
+        margin-bottom: 16px;
+    }
+
+    &_common {}
+
+    // popup_main_building	
+    &_main_building {}
+}
+
+@import './popup/vip_daily';
+@import './popup/vip_right';

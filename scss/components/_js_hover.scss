@@ -1,0 +1,35 @@
+/* data hover */
+.js_hover {
+    cursor: pointer;
+}
+
+.data_hover {
+    position: fixed;
+    z-index: 1024;
+
+    pointer-events: none;
+    background-color: #fff;
+
+    white-space: nowrap;
+    padding: 1px 20px;
+    border-radius: 99px;
+    border: 1px solid #aaa;
+
+    opacity: 0;
+
+    transform: translate(-50%, -26px);
+
+    transition: opacity 150ms linear;
+
+    &::after {
+        content: '';
+        border: 6px solid transparent;
+
+        border-top-color: #aaa;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

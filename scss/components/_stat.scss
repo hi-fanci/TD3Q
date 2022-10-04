@@ -1,0 +1,41 @@
+/* stat */
+.stat {
+    line-height: 1.4;
+
+    &_common {
+        display: flex;
+        align-items: center;
+    }
+
+    >dt {
+        width: 46px;
+        font-size: 16px;
+    }
+
+    >dd {
+        span {
+            display: inline-block;
+        }
+    }
+
+    &_add,
+    &_ori {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &_ori {
+        margin-right: 8px;
+    }
+
+    &_add {
+        color: #3cf224;
+    }
+
+    &_tab {
+        border-radius: g.$radius;
+        border: 2px solid g.$c_dark;
+        background-color: #bfbfbf;
+        padding: 20px;
+    }
+}

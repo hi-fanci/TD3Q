@@ -1,0 +1,57 @@
+.vip_right {
+
+    //vip_right_tab
+    &_tab {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        display: flex;
+
+        >.button {
+            width: calc(20% - 4px);
+            height: 38px;
+
+            font-size: 18px;
+            font-weight: 700;
+
+            margin-left: 2px;
+            margin-right: 2px;
+
+            background-color: #aaa;
+            border-top-left-radius: g.$radius;
+            border-top-right-radius: g.$radius;
+
+            transition: background-color 150ms ease;
+
+            &.actived {
+                color: g.$c_white;
+                background-color: g.$c_dark;
+            }
+        }
+    }
+
+    &_info {
+        min-height: 200px;
+
+        border: 2px solid g.$c_dark;
+        padding: 20px;
+
+        border-radius: g.$radius_mini;
+
+        .block {
+            display: none;
+
+
+            &.actived {
+                display: block;
+            }
+        }
+
+        >.button {
+            width: 20%;
+            height: 40px;
+
+            background-color: red;
+        }
+    }
+}

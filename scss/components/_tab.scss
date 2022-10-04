@@ -1,0 +1,40 @@
+/* tab */
+.tab {
+    &_common {}
+
+    &_buttons {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+
+        button {
+            width: calc(25% - 6px);
+            color: #333;
+
+            margin-left: 3px;
+            margin-right: 3px;
+
+            font-size: 16px;
+            padding: 10px;
+            transition: all 150ms ease;
+
+            background-color: #aaa;
+            border-top-left-radius: g.$radius_mini;
+            border-top-right-radius: g.$radius_mini;
+
+            &.actived {
+                color: #fff;
+                font-weight: 700;
+                background-color: g.$c_dark;
+            }
+        }
+    }
+
+    &_item {
+        display: none;
+
+        &.actived {
+            display: block;
+        }
+    }
+}
